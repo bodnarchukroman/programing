@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+h1 {
+  text-align: center;
+}
+#controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#controls input {
+  margin: 0 10px;
+  padding: 5px;
+  width: 80px;
+}
+#controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+#chart {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+#output {
+  text-align: center;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#output span {
+  font-weight: bold;
+  margin-left: 10px;
+}
