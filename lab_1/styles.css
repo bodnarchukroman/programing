@@ -1,0 +1,27 @@
+#trajectoryCanvas {
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs-container {
+  border: 2px solid #ccc;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.input-group {
+  margin: 5px 0;
+}
+
+.name {
+  text-align: center;
+}
+
+.button-group {
+  text-align: center;
+}
