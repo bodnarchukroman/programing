@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Задача про рюкзак з кількістю предметів</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Розв'язання задачі про рюкзак</h1>
+
+    <div class="container">
+      <from>
+        <div class="input-group">
+          <label>
+            <span>Кількість предметів (n):</span>
+            <input type="number" id="itemCount" value="8" min="1" />
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label>
+            <span>Макс. вага (W):</span>
+            <input type="number" id="maxWeight" value="15" />
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label>
+            <span>Ваги предметів (через кому):</span>
+            <input type="text" id="weights" value="10,2,9,6,3,4,8,4" />
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label>
+            <span>Цінності (через кому):</span>
+            <input type="text" id="values" value="9,4,12,2,7,15,5,5" />
+          </label>
+        </div>
+
+        <button onclick="solveKnapsack()">Розв'язати</button>
+        <button onclick="clearResults()" class="clear-btn">
+          Очистити результат
+        </button>
+        <div id="error" class="error"></div>
+      </from>
+
+      <div id="dpTable"></div>
+    </div>
+
+    <div id="result" class="result"></div>
+  </body>
+</html>
