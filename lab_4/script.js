@@ -187,3 +187,5 @@ function resetAndDraw() {
 
 // Початковий запуск
 resetAndDraw();
+
+// Фікс валідації МНК
