@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 4 - Апроксимація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="controls">
+        <div>
+            <label>Точки:</label>
+            <select id="datasetSelect" onchange="resetAndDraw()">
+                <option value="5">5 точок</option>
+                <option value="10">10 точок</option>
+                <option value="20">20 точок</option>
+            </select>
+        </div>
+        <div>
+            <label>Метод:</label>
+            <select id="methodSelect">
+                <option value="lagrange">Поліном Лагранжа</option>
+                <option value="mnk">МНК (Найменші квадрати)</option>
+            </select>
+        </div>
+        <div>
+            <label>Степінь МНК:</label>
+            <input type="number" id="polyDegree" value="2" min="1" max="5" style="width: 50px;">
+        </div>
+        <button onclick="startAnimation()">Побудувати графік</button>
+        <span id="errorMsg" class="error">Помилка обчислень!</span>
+    </div>
+
+    <canvas id="plotCanvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
